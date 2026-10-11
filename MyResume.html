@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jyoti Paul Chowdhury – Resume</title>
+<style>
+  :root {
+    --ink: #1c2b2a;
+    --muted: #5b6b69;
+    --line: #d5dedc;
+    --accent: #1f6f68;
+    --side: #eaf1ef;
+    --paper: #ffffff;
+    --bg: #dfe7e5;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 2rem 1rem;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .page {
+    max-width: 920px;
+    margin: 0 auto;
+    background: var(--paper);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    box-shadow: 0 2px 16px rgba(0,0,0,.12);
+  }
+
+  /* Sidebar */
+  aside {
+    background: var(--side);
+    padding: 2.25rem 1.5rem;
+  }
+  .name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0 0 .35rem;
+    color: var(--accent);
+    letter-spacing: .01em;
+  }
+  .role { margin: 0 0 1.75rem; color: var(--muted); font-size: .9rem; }
+  aside h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    margin: 1.75rem 0 .5rem;
+    padding-bottom: .3rem;
+    border-bottom: 2px solid var(--accent);
+  }
+  aside ul { list-style: none; margin: 0; padding: 0; }
+  aside li { margin: .35rem 0; font-size: .9rem; word-break: break-word; }
+  .skill-group { margin: .6rem 0; font-size: .9rem; }
+  .skill-group b { display: block; font-weight: 600; }
+  .skill-group span { color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: .35rem; padding: 0; }
+  .chips li {
+    margin: 0;
+    padding: .15rem .6rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    font-size: .8rem;
+    background: #fff;
+  }
+
+  /* Main */
+  main { padding: 2.25rem 2.25rem 2.25rem 2rem; }
+  main h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25rem;
+    margin: 0 0 .75rem;
+    color: var(--accent);
+    padding-bottom: .3rem;
+    border-bottom: 1px solid var(--line);
+  }
+  section { margin-bottom: 1.9rem; }
+  section:last-child { margin-bottom: 0; }
+  p { margin: 0; }
+
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: .75rem;
+    flex-wrap: wrap;
+  }
+  .entry-head h3 { margin: 0; font-size: 1.02rem; }
+  .meta { color: var(--muted); font-size: .88rem; }
+  .tag {
+    font-size: .75rem;
+    padding: .1rem .55rem;
+    border-radius: 999px;
+    background: var(--side);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    white-space: nowrap;
+  }
+  .stack { color: var(--muted); font-size: .85rem; margin: .15rem 0 .4rem; font-style: italic; }
+  .project + .project { margin-top: 1.25rem; }
+  main ul { margin: .3rem 0 0; padding-left: 1.15rem; }
+  main li { margin: .25rem 0; }
+  main li::marker { color: var(--accent); }
+
+  @media (max-width: 720px) {
+    body { padding: 0; }
+    .page { grid-template-columns: 1fr; box-shadow: none; }
+    main { padding: 1.75rem 1.5rem; }
+    aside { padding: 1.75rem 1.5rem; }
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; font-size: 12px; }
+    .page { box-shadow: none; max-width: none; }
+    aside { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <aside>
+    <h1 class="name">Jyoti Paul Chowdhury</h1>
+    <p class="role">B.E. Computer Science &amp; Engineering<br>RVITM, Bengaluru</p>
+
+    <h2>Contact</h2>
+    <ul>
+      <li>Bengaluru, Karnataka</li>
+      <li><a href="tel:8482031288">8482031288</a></li>
+      <li><a href="mailto:paulchowdhury91@gmail.com">paulchowdhury91@gmail.com</a></li>
+      <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <div class="skill-group"><b>Languages</b><span>C, C++, Java, Python, JavaScript</span></div>
+    <div class="skill-group"><b>Web Technologies</b><span>HTML, CSS, JavaScript</span></div>
+    <div class="skill-group"><b>Database</b><span>SQL,MongoDB</span></div>
+    <div class="skill-group"><b>AI/ML</b><span>Agentic AI</span></div>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li>AI Skills<br><span class="meta">Agentic AI</span></li>
+      <li>Cyber Security<br><span class="meta">Cyber Security and Ethical Hacking</span></li>
+    </ul>
+
+    <h2>Soft Skills</h2>
+    <ul class="chips">
+      <li>Communication</li>
+      <li>Problem-Solving</li>
+      <li>Teamwork</li>
+      <li>Collaboration</li>
+      <li>Adaptability</li>
+      <li>Creativity</li>
+      <li>Presentation Skills</li>
+    </ul>
+  </aside>
+
+  <main>
+    <section>
+      <h2>Profile</h2>
+      <p>Computer Science and Engineering undergraduate with hands-on experience in Java, Python, C++, JavaScript, HTML/CSS and SQL/MongoDB. Building projects in software applications, data analysis and multimodal AI using BERT, WavLM and CNN. Strong problem-solving, communication and teamwork skills, with active participation in technical workshops and college activities. Seeking an internship to contribute to software engineering and build practical technology solutions.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry-head">
+        <h3>RV Institute of Technology and Management (RVITM)</h3>
+        <span class="meta">Expected Graduation: 2028</span>
+      </div>
+      <p class="meta">B.E. in Computer Science &amp; Engineering &nbsp;|&nbsp; Currently in 5th Semester</p>
+    </section>
+
+    <section>
+      <h2>Project Experience</h2>
+
+      <div class="project">
+        <div class="entry-head">
+          <h3>Servd – Food Delivery Web Application</h3>
+          <h3>Live Demo : https://foodapp-7c93.onrender.com/</h3>
+          <span class="tag">In Progress</span>
+        </div>
+        <p class="stack">JavaScript | HTML | CSS | [Node.js / Express / MongoDB : fill in backend]</p>
+        <ul>
+          <li>Built a full-stack food ordering platform where users can browse 20+ restaurants, search by name or cuisine, and filter by categories such as Veg, Non-Veg, Pizza and Desserts.</li>
+          <li>Designed a responsive UI with restaurant cards showing live Open/Closed status, ratings, delivery time, delivery fee and minimum order value.</li>
+          <li>Implemented user authentication (Login / Sign Up)</li>
+          <li>Deployed the application on Render with a live public URL [add: and a CI/CD or GitHub-linked auto-deploy if you set that up].</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="entry-head">
+          <h3>Student Tracking &amp; Performance Analytics System</h3>
+        </div>
+        <p class="stack">Java | SQL | JavaScript | HTML | CSS</p>
+        <ul>
+          <li>Developed a system for managing and analyzing student academic performance.</li>
+          <li>Implemented student ranking based on marks and year-wise performance tracking.</li>
+          <li>Created performance graphs to visualize academic progress.</li>
+          <li>Implemented CSV report generation for student performance data.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Workshops &amp; Activities</h2>
+      <ul>
+        <li>Participated in DSA, Agentic AI, Cyber Security and Ethical Hacking, AWS and Git workshops</li>
+        <li>Cultural Club Member, RVITM</li>
+        <li>Volunteer(College Events)</li>
+      </ul>
+    </section>
+  </main>
+
+</div>
+</body>
+</html>
